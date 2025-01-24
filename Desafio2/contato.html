@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Dente Meus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Menu de navegação -->
+            <button class="sidebar"><a href="index.html">Página Principal</a></button>
+            <button class="sidebar"><a href="sobre.html">Sobre nós</a></button>
+            <button class="sidebar"><a href="horarios.html">Horário de Atendimento</a></button>
+            <button class="sidebar"><a href="contato.html">Contato</a></button>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <!-- Header da página -->
+                <img src="image/Contato.png" alt="Entre em contato" width="100%">
+            </div>
+
+            <div class="content">
+                <!-- Conteúdo principal -->
+                <h1>Contato</h1>
+                <p>
+                    Estamos sempre prontos para atender você! Entre em contato conosco pelos canais abaixo ou envie-nos uma mensagem preenchendo o formulário.
+                </p>
+
+                <h2>Informações de Contato</h2>
+                <p>
+                    <strong>Telefone:</strong> (11) 1234-5678<br>
+                    <strong>WhatsApp:</strong> (11) 98765-4321<br>
+                    <strong>Endereço:</strong> Rua dos Sorrisos, 123 - Centro, Cidade Feliz - SP, 12345-678
+                </p>
+
+                <h2>Localização</h2>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509567!2d-122.4194154846813!3d37.77492927975948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5f9dd5d9%3A0x4c04b0efb62965d2!2sGoogle!5e0!3m2!1sen!2sus!4v1615481702677!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+
+                <h2>Envie uma Mensagem</h2>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Seus Dados</legend>
+                        <label for="nome">Nome:</label><br>
+                        <input type="text" id="nome" name="nome" required><br><br>
+
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Mensagem</legend>
+                        <label for="assunto">Assunto:</label><br>
+                        <input type="text" id="assunto" name="assunto" required><br><br>
+
+                        <label for="mensagem">Mensagem:</label><br>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+                    </fieldset>
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+            </div>
+
+            <div class="footer">
+                <!-- Rodapé da página -->
+                <div class="informacoes">
+                    <p>
+                        <strong>Endereço:</strong> Rua dos Sorrisos, 123 - Centro, Cidade Feliz - SP, 12345-678<br>
+                        <strong>Telefone:</strong> (11) 1234-5678 | <strong>Email:</strong> contato@dentemeus.com.br
+                    </p>
+                    <p>&copy; 2025 Clínica Odontológica - Dente Meus. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

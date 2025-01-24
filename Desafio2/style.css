@@ -1,0 +1,118 @@
+/* Reset básico */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif; /* Define uma fonte padrão */
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px; /* Garante que o layout seja responsivo */
+    margin: 20px auto; /* Adiciona espaço ao redor */
+    background-color: #e0f7fa; /* Cores mais sutis para melhor estética */
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona profundidade */
+    border-radius: 8px; /* Suaviza os cantos */
+}
+
+.main {
+    flex: 1; /* Torna o conteúdo responsivo */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.menu {
+    width: 15%;
+    background-color: #00acc1; /* Cor mais suave */
+    color: white;
+    padding: 20px; /* Uniformiza o espaçamento interno */
+    border-top-left-radius: 8px; /* Harmoniza com o wrapper */
+    border-bottom-left-radius: 8px;
+}
+
+.header {
+    background-color: #004d4d; /* Cor mais elegante */
+    min-height: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 8px;
+}
+
+.content {
+    background-color: #ffffff;
+    min-height: 300px;
+    padding: 20px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Estilo sutil */
+    border-radius: 4px;
+}
+
+.footer {
+    background-color: #673ab7;
+    min-height: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 8px;
+}
+
+h1 {
+    color: Black; /* Contraste com o fundo */
+    text-align: center;
+    font-size: 2rem; /* Proporção mais agradável */
+    margin: 0;
+}
+h2 {
+    color: Black; /* Contraste com o fundo */
+    text-align: center;
+    font-size: 1.5rem; /* Proporção mais agradável */
+    margin: 3;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column; /* Empilha os elementos */
+    }
+    .menu {
+        width: 100%; /* Adapta o menu */
+        border-radius: 8px 8px 0 0;
+    }
+    .header, .footer {
+        border-radius: 0; /* Remove arredondamento para consistência */
+    }
+}
+.sidebar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%; /* Defina a largura desejada */
+    padding: 15px 32px;
+    margin: 4px 2px;
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar:hover {
+    background-color: #45a049;
+}
