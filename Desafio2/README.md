@@ -69,7 +69,3 @@ O site contém as seguintes páginas:
 
 ## Licença
 Este projeto foi desenvolvido para fins educacionais e está disponível sob a licença MIT.
-
----
-
-Bons estudos e sucesso na criação de sites incríveis! 🚀
