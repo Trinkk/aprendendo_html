@@ -1,0 +1,104 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul { list-style: none; padding-left: 0px; }
+a { color:blue; text-decoration: none;}
+.bar {
+    background-color: #f9f9fb;
+    padding:1px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+main {
+    grid-area: main;
+    border-right: solid 1px #cdcdcd;
+    padding-right: 15px;
+}   
+footer {
+    border-top: solid 1px #cdcdcd;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    color: #333;
+    bottom: 0;
+    width: 100%;
+}
+.anchors {
+    padding-left: 0px;
+    position: sticky; /* Mantém o elemento fixo enquanto rola */
+    top: 0; /* Fixa a posição da âncora no topo da tela */
+    height: max-content; /* Evita problemas de altura excedendo o conteúdo */
+}
+
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+figure {
+    text-align: center;
+}
+.header-container {
+    display: flex; /* Define que os filhos estarão em um layout flexível */
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+    justify-content: space-between; /* Adiciona espaço entre os elementos */
+    gap: 1rem; /* Espaçamento entre os elementos */
+    margin: 01rem;
+    margin: 1rem;
+}
+
+.logo {
+    flex-shrink: 0; /* Garante que o logo não encolha */
+}
+    
+.search {
+    display: flex; /* Para que o input e o botão fiquem lado a lado */
+    gap: 0.5rem; /* Espaço entre o input e o botão */
+    align-items: center;
+}
+    
+.cdx-text-input__input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+    
+.cdx-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+    
+.cdx-button:hover {
+    background-color: gray;
+}
+
+.responsive-image {
+    width: 20rem; /* Faz com que a imagem preencha toda a largura da div */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block; /* Remove o espaço extra abaixo da imagem (comportamento inline) */
+    margin-left: auto; /* Centraliza a imagem horizontalmente */
+    margin-right: auto; /* Centraliza a imagem horizontalmente */
+}
+
+figcaption {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #555;
+}

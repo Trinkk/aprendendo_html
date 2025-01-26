@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header role="banner">
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/images/logo.png" width="200" alt="Logotipo do site" />
+            </div>
+            <div class="search">
+                <label for="searchInput" class="visually-hidden">Pesquisar na Wikipédia</label>
+                <input class="cdx-text-input__input" type="search" id="searchInput" name="search" placeholder="Pesquisar na Wikipédia" aria-label="Pesquisar na Wikipédia" title="Pesquisar na Wikipédia [alt-shift-f]" autocomplete="off">
+                <button class="cdx-button cdx-search-input__end-button" type="button" aria-label="Clique para pesquisar">Pesquisar</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="bar"></div>
+
+    <div class="content">
+        <aside class="sidebar" aria-label="Seção lateral">
+            <h2>Outros tópicos relacionados</h2>
+            <nav aria-label="Links relacionados">
+                <ul>
+                    <li><a href="https://pt.wikipedia.org/wiki/Ar_condicionado">Ar condicionado</a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Exaustor">Exaustor</a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Refrigerador">Refrigerador</a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Termoventilador">Termoventilador</a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Ventilador_de_teto">Ventilador de teto</a></li>
+                    <li><a href="https://pt.wikipedia.org/wiki/Ventilador_de_torre">Ventilador de torre</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main role="main">
+            <!-- Seção principal -->
+            <section id="Inicio">
+                <h1>Introdução ao Ventilador</h1>
+                <p>Ventilador (português brasileiro) ou Ventoinha (português europeu) é um dispositivo mecânico utilizado para converter energia mecânica de rotação, aplicada em seus eixos, em aumento de pressão do ar. Foi inventado nos Estados Unidos em 1882 por Schuyler S. Wheeler.</p>
+                <figure>
+                    <img src="assets/images/ventilador.jpeg" alt="Ventilador de chão" class="responsive-image">
+                    <figcaption>Ventilador de chão</figcaption>
+                </figure>
+            </section>
+
+            <section id="Uso-residencial">
+                <h2>Uso Residencial</h2>
+                <p>Os ventiladores são usados em casas, escritórios, escolas e indústrias para conforto térmico. O ventilador de teto, além de funcional, é também decorativo.</p>
+                <figure>
+                    <img src="assets/images/ventilador-residencial.jpg" alt="Ventilador de mesa em ambiente residencial" class="responsive-image">
+                    <figcaption>Ventilador de mesa</figcaption>
+                </figure>
+            </section>
+
+            <section id="Uso-industrial">
+                <h2>Uso Industrial</h2>
+                <p>Em indústrias, ventiladores resfriam máquinas e garantem o conforto térmico dos trabalhadores. Existem ventiladores específicos para diferentes necessidades, como centrífugos e axiais.</p>
+                <figure>
+                    <img src="assets/images/ventilador-industrial.jpg" alt="Ventilador industrial" class="responsive-image">
+                    <figcaption>Ventilador industrial</figcaption>
+                </figure>
+            </section>
+
+            <section id="Instalação">
+                <h2>Instalação</h2>
+                <p>Os ventiladores de teto devem ser instalados no centro do ambiente, a uma altura de 2,5 metros do piso. Já os ventiladores de mesa e de parede são adequados para locais mais específicos.</p>
+                <figure>
+                    <img src="assets/images/ventilador-instalacao.jpg" alt="Instalação de ventilador de teto" class="responsive-image">
+                    <figcaption>Instalação do ventilador de teto</figcaption>
+                </figure>
+            </section>
+
+            <!-- Seções adicionais omitidas para brevidade -->
+        </main>
+
+        <nav class="anchors" aria-label="Navegação pelo artigo">
+            <h2>Navegação no Artigo</h2>
+            <ul>
+                <li><a href="#Inicio">Introdução</a></li>
+                <li><a href="#Uso-residencial">Uso Residencial</a></li>
+                <li><a href="#Uso-industrial">Uso Industrial</a></li>
+                <li><a href="#Instalação">Instalação</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer role="contentinfo">
+        <p>Desenvolvido por <strong>Bernardo Matheus dos Santos Borges</strong>.</p>
+    </footer>
+</body>
+</html>
